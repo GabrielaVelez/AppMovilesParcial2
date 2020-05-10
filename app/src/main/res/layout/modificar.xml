@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".modificar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="@string/nombre"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="@string/estrato"
+                android:textColor="#040404"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinnerEstrato"
+                android:layout_width="250dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="93dp"
+                android:layout_marginVertical="32dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="@string/salario"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+            <EditText
+                android:id="@+id/sal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="@string/Neducativo"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+            <Spinner
+                android:id="@+id/spinnerNAacade"
+                android:layout_width="250dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="93dp"
+                android:layout_marginVertical="32dp"
+                />
+
+            <Button
+                android:id="@+id/btnguardar"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:text="Modificar" />
+
+            <Button
+                android:id="@+id/btncanclar"
+                android:layout_width="264dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
